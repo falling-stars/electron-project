@@ -2,33 +2,17 @@
   "name": "electron-project",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/main/main.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-builder"
+    "dev": "node ./dev",
+    "start": "electron ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^8.2.0",
-    "electron-builder": "^22.4.1"
+    "chokidar": "^3.3.1",
+    "electron": "^8.2.0"
   },
-  "dependencies": {},
-  "build": {
-    "productName": "demo",
-    "appId": "com.xxx.xxxxx",
-    "copyright": "copyright",
-    "directories": {
-      "output": "build"
-    },
-    "win": {
-      "icon": "logo.ico",
-      "target": [
-        {
-          "target": "nsis"
-        }
-      ]
-    }
-  }
+  "dependencies": {}
 }

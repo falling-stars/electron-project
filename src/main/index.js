@@ -32,7 +32,8 @@ const createWindow = () => {
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
 
-  window.loadFile('index.html')
+  window.loadFile('../renderer/index.html')
+  window.webContents.openDevTools({ mode: 'bottom' })
 }
 
 app.whenReady().then(createWindow)
